@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: #fff url("https://regularlyscheduledprogrammingblog.files.wordpress.com/2018/01/angled-puzzle.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 70%;
+    background: rgba(8, 217, 214, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+    padding: 10px;
+    width: 210px;
+    height: 30px;
+    border-radius: 5px;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+    padding: 10px;
+    background-color: #ff2e63;
+    border: 1.3px solid #08d9d6;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-header {
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.search {
+    margin: 0.5rem auto;
+    position: relative;
+}
+
+.search input {
+    text-indent: 30px;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    font-size: 15px;
+}
+
+.random-button {
+    margin: 1.5rem auto;
+}
+
+@media (min-width: 435px) {
+    input {
+        width: 280px;
+        height: 40px;
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+    }
+    .search .fa-search {
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 720px) {
+    input {
+        width: 400px;
+    }
+}
+
+@media (min-width: 968px) {
+    input {
+        width: 450px;
+        height: 45px;
+        font-size: 22px;
+    }
+    .main-header {
+        margin: 1.5rem auto 0.5rem auto;
+    }
+    .search .fa-search {
+        top: 10px;
+        left: 10px;
+        font-size: 22px;
+    }
+    button {
+        font-size: 22px;
+    }
+}
