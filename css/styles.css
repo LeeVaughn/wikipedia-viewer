@@ -16,9 +16,13 @@ body {
 
 img {
     width: 70%;
-    background: rgba(8, 217, 214, 0.5);
+    background: rgba(8, 217, 214, 0.75);
     border-radius: 5px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+    cursor: pointer;
 }
 
 input {
@@ -31,12 +35,12 @@ input {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button {
-    padding: 10px;
-    background-color: #ff2e63;
-    border: 1.3px solid #08d9d6;
-    border-radius: 5px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+h2 {
+    color: #ff2e63;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -53,39 +57,65 @@ button {
     margin: 1.5rem auto;
 }
 
-.search {
+.search-bar {
     margin: 0.5rem auto;
     position: relative;
 }
 
-.search input {
-    text-indent: 30px;
+.search-bar button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #ff2e63;
+    border-radius: 5px;
 }
 
-.search .fa-search {
-    position: absolute;
-    top: 7px;
-    left: 10px;
-    font-size: 15px;
+.search-bar input {
+    text-indent: 30px;
 }
 
 .random-button {
     margin: 1.5rem auto;
 }
 
+.random-button button {
+    padding: 10px;
+    background-color: #ff2e63;
+    border: 1.3px solid #08d9d6;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.output-section {
+    width: 90%;
+}
+
+.output-results {
+    margin: 10px auto;
+    padding: 1px 20px;
+    border-radius: 5px;
+}
+
 @media (min-width: 435px) {
+    button {
+        font-size: 20px;
+    }
     input {
         width: 280px;
         height: 40px;
         font-size: 20px;
     }
-    button {
+    .search-bar button {
+        width: 40px;
+        height: 40px;
         font-size: 20px;
     }
-    .search .fa-search {
-        top: 10px;
-        left: 10px;
-        font-size: 20px;
+    .search-bar input {
+        text-indent: 40px;
+    }
+    .output-section {
+        width: 80%;
     }
 }
 
@@ -93,23 +123,30 @@ button {
     input {
         width: 400px;
     }
+    .output-section {
+        width: 600px;
+    }
 }
 
 @media (min-width: 968px) {
+    button {
+        font-size: 22px;
+    }
     input {
         width: 450px;
         height: 45px;
         font-size: 22px;
+        text-indent: 22px;
     }
-    .main-header {
-        margin: 1.5rem auto 0.5rem auto;
+    .search-bar button {
+        width: 45px;
+        height: 45px;
     }
-    .search .fa-search {
-        top: 10px;
-        left: 10px;
-        font-size: 22px;
+    .search-bar input {
+        text-indent: 45px;
     }
-    button {
-        font-size: 22px;
+    .output-section {
+        width: 700px;
+        font-size: 18px;
     }
 }
