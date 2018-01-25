@@ -1,6 +1,6 @@
 # wikipedia-viewer
 My version of the Build a Wikipedia Viewer project from freeCodeCamp's Front End Developer Certification.
 
-This is still currently a work in progress.
+This app allows the user to search Wikipedia and see the results at the bottom of the page.
 
-HTML and CSS is finished but I still need to do all of the JavaScript work necessary to complete the different User Stories.
+The user can also choose to be taken to a random Wikipedia entry.
