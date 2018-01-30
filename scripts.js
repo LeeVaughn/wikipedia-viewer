@@ -9,7 +9,7 @@ $(document).ready(function () {
             // (data[2][0]); gets description
             // (data[3][0]); gets link
 
-            //       clears search bar after search
+            // clears search bar after search
             $("#output").empty();
 
             for (var i = 0; i < data[1].length; i++) {
