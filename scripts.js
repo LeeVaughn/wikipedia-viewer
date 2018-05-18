@@ -4,7 +4,7 @@ $(document).ready(function () {
 
         var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchTerm + "&format=json&callback=?";
 
-        $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchTerm + "&format=json&callback=?", function (data) {
+        $.getJSON(url, function (data) {
             // (data[1][0]); gets heading
             // (data[2][0]); gets description
             // (data[3][0]); gets link
