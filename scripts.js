@@ -1,8 +1,7 @@
 $(document).ready(function () {
     $("#search").click(function () {
-        var searchTerm = $("#searchTerm").val();
-
-        var url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchTerm + "&format=json&callback=?";
+        const searchTerm = $("#searchTerm").val();
+        const url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${searchTerm}&format=json&callback=?`;
 
         $.getJSON(url, function (data) {
             // (data[1][0]); gets heading
@@ -12,8 +11,8 @@ $(document).ready(function () {
             // clears search bar after search
             $("#output").empty();
 
-            for (var i = 0; i < data[1].length; i++) {
-                $("#output").append("<div class='output-results'><a href = " + data[3][i] + " target='blank'><h2>" + data[1][i] + "</h2></a><p>" + data[2][i] + "</p></div>");
+            for (let i = 0; i < data[1].length; i++) {
+                $("#output").append(`<div class="output-results"><a href ="${data[3][i]}" target="blank"><h2>${data[1][i]}</h2></a><p>${data[2][i]}</p></div>`);
                 $(".output-results").css("background", "rgba(8, 217, 214, 0.85)");
             }
             $("#searchTerm").val("");
